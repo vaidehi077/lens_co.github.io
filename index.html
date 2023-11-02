@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photographer Portfolio</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 100vh;
+            background-image: url("pages/imgs/P11.jpg");
+            background-size: cover;
+            font-family: sans-serif;
+        }
+
+        nav {
+            width: 100%;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2.1em;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, cyan, purple);
+            font-size: poppins;
+            text-transform: uppercase;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 20px 20px;
+            font-size: 22px;
+            position: relative;
+            left: 55%;
+        }
+
+        .menu a:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid white;
+            transition: 0.4s linear;
+        }
+
+        .menu a:hover:before {
+            width: 100%;
+        }
+
+        .footer {
+            color: white;
+            text-align: center;
+        }
+
+        .button {
+            border-radius: 4%;
+            background-color: brown;
+            border: none;
+            text-align: center;
+            font-size: 22px;
+            padding: 10px;
+            width: 120px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 4px;
+            font-family: sans-serif;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+            color: white;
+        }
+
+        .button>span>a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        .h-txt {
+            font-size: larger;
+            position: absolute;
+            top: 47%;
+            left: 73%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-family: cursive;
+        }
+
+        .h1-text {
+            font-family: playfair display, sans-serif;
+            font-size: medium;
+            color: rgba(234, 234, 4, 0.86);
+            margin-top: 10%;
+            margin-left: 59%;
+        }
+
+        .footer {
+            /* margin-top: 5px; */
+            height: 250px;
+            background-color: #e2dfdf;
+            font-family: Playfair Display, sans-serif;
+            letter-spacing: 2px;
+        }
+
+        .footer>h1,
+        p {
+            text-align: center;
+            padding-top: 20px;
+            color: black;
+            line-height: 1.5em;
+        }
+
+        .foot-social {
+            padding: 1px 15px 15px 15px;
+            color: white;
+        }
+
+        .social {
+            padding: 8px;
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+
+        .social-img {
+            width: 38px;
+        }
+
+        .footer-login {
+            color: white;
+            text-align: right;
+            padding-top: 10px;
+            font-family: Playfair Display, sans-serif;
+            letter-spacing: 2px;
+            margin-top: 70px;
+            padding-right: 10px;
+        }
+
+        .footer-index {
+            text-align: center;
+            color: black;
+            padding-right: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h5><b>Lens co.</b></h5>
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="pages/portfolio.html">Portfolio</a>
+                <a href="pages/About.html">About</a>
+                <a href="pages/shop.html">Shop</a>
+            </div>
+            <div>
+                <button class="button">
+                    <span>
+                        <a href="pages/contact.html">Contact</a>
+                    </span>
+                </button>
+            </div>
+        </nav>
+        <div class="h1-text">
+            <h1><b>CAPTURE AND CHERISH <br> EVERY MOMENT</b></h1>
+        </div>
+        <div class="h-txt">
+            The art of photography is all about directing the attention of the viewer.
+        </div>
+    </header>
+    <hr>
+    <div class="footer">
+        <h1>Recognized for Excellence in Photography </h1>
+        <p>
+            Thank You for Visiting Lens Co. <br> 
+            We look forward to Capturing Your Moments.
+        </p>
+        <div class="foot-social">
+            <p>
+                <a href="#" class="social"><img src="pages/imgs/instagram.svg" class="social-img"></a>
+                <a href="#" class="social"><img src="pages/imgs/facebook.svg" class="social-img"></a>
+                <a href="#" class="social"><img src="pages/imgs/twitter.svg" class="social-img"></a>
+                <a href="#" class="social"><img src="pages/imgs/linkedin.svg" class="social-img"></a>
+                <a href="#" class="social"><img src="pages/imgs/github.svg" class="social-img"></a>
+            </p>
+        </div>
+        <hr color="black">
+        <footer class="footer-index">Designed By &copy;Vaidehi Vaishnav</footer>
+    </div>
+</body>
+
+</html>
